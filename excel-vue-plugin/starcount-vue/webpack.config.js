@@ -27,7 +27,7 @@ module.exports = async (env, options) => {
       functions: "./src/functions/functions.js",
       taskpane: "./src/taskpane/taskpane.js",
       commands: "./src/commands/commands.js",
-      app: ['./src/app.js']
+      app: ['./src/main.js']
     },
     output: {
       devtoolModuleFilenameTemplate: "webpack:///[resource-path]?[loaders]",
