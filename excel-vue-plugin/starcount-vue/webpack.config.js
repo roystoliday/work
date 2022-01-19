@@ -41,7 +41,11 @@ module.exports = async (env, options) => {
         {
           test: /\.vue$/,
           use: 'vue-loader'
-        },        
+        },
+        {
+          test: /\.css$/,
+          use: ['vue-style-loader', 'css-loader']
+        },
         {
           test: /\.js$/,
           exclude: /node_modules/,
